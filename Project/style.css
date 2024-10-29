@@ -1,0 +1,585 @@
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-display: swap;
+    src: url(./fonts/rubik-v9-latin-500.woff2) format('woff2'),
+         url(/fonts/rubik-v9-latin-700.woff2) format('woff2'),
+         url(/fonts/rubik-v9-latin-regular.woff2) format('woff2'),
+        
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Rubik',sans-serif;
+    color: #4f5665;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    padding: 20px 0;
+    
+}
+.header .container
+{
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1, h2, h3, h4{
+    color: #0b132a;;
+}
+.flex {
+    display: flex;
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+.navigate ul  {
+    display: flex;
+    padding-left: 0;
+}
+.navigate ul li{
+    margin-right: 40px;
+    list-style-type: none ;
+}
+.navigate ul li a{
+    text-decoration: none;
+    color: #4f5665;
+    display: inline-block;
+    background-color: transparent;
+    transition: all 200ms ease;
+}
+.navigate ul li:last-child{
+    margin-right: 0;
+}
+.regBlock{
+    justify-content: center;
+    align-items: center;
+}
+.regBlock div{
+    margin-right: 30px;
+}
+.button.reg{
+    border: #f53838 1px solid;
+    color: #f53838;
+    background-color: #ffffff;
+    border-radius: 1000px;
+    box-sizing: border-box;
+    padding: 13px 45px;
+    font-size: 16px;
+    font-family: 'Rubik',sans-serif;
+}
+
+.about{
+    padding: 30px 0px  50px;
+}
+.aboutLeft{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    box-sizing: border-box;
+    flex-direction: column;
+   
+}
+.aboutLeft h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+.aboutLeft p{
+    line-height: 30px;
+    padding: 20px 0 30px;
+}
+.aboutLeft button{
+    text-align: center;
+    background-color: #f53838;
+    color: #ffffff;
+    box-shadow: 0 20px 40px rgba(245, 56, 56, 0.35);
+    border-radius: 10px;
+    border: 2px solid #f53838;
+    padding: 21px 77px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+}
+.aboutRight{
+    width: 50%;
+    box-sizing: border-box;
+    
+}
+.aboutRight img{
+    width: 100%;
+}
+.statistic,.features, .pricing ,.location, .reviews, .subscribe{
+    padding: 50px 0px;
+
+}
+.statistic .container{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 20px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.09);    
+}
+.cell{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+.cell div{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:20px 30px;
+}
+.stat p{
+    padding: 0px;
+    margin:0px;
+}
+.stat p:first-child{
+    font-size: 25px;
+    color: #0b132a;
+}
+.stat p:last-child{
+    font-size: 20px;
+}
+
+.features .container{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featuresLeft{
+    width: 50%;
+}
+.featuresLeft img{
+    width: 100%;
+}
+
+.featuresRight{
+    max-width: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+}
+.featuresRight h2{
+    font-size: 35px;
+    padding: 20px 0;
+}
+.featuresRight p{
+    line-height: 30px;
+}
+
+.featuresRight ul{
+    list-style-type: none;
+    font-size: 14px;
+    margin-top: 20px;
+    padding-left: 0px;
+}
+.featuresRight li{
+    margin-bottom: 20px;
+}
+.featuresRight li::before{
+    content: url(img/check-icon.svg);
+    position: relative;
+    margin-right: 12px;
+    top: 5px;
+}
+.pricing{
+    background-color: #fbfbfb;
+}
+.pricingHeader , .locationHeader, .reviewsHeader{
+    text-align: center;
+    margin: 0 60px 80px;
+}
+.pricing h2,  .locationHeader h2, .reviewsHeader h1, .subscribeText h2{
+    font-size: 35px;
+   
+}
+.pricing .container{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: unset;
+}
+.pricingPlan{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 40px;
+    border: 2px solid #dddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.09);
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: unset;
+}
+.pricingPlan h3{
+    font-size: 18px;
+    margin: 30px 0px;
+}
+
+.pricingPlan li{
+    margin-bottom: 20px;
+}
+.pricingPlan h4{
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.pricingPlan ul{
+    list-style-image: url(img/check-icon-2.svg) ;
+}
+.Price{
+    margin-top: auto;
+    text-align: center;
+}
+.Price button{
+    border: 1px solid #f53838;
+    color: #f53838;
+    background-color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 100px;
+    border-width: 2px;
+    padding: 12px 64px; 
+    font-size: 16px;
+}
+.locationHeader h2{
+    margin: 0px 86px 20px;
+}
+
+.location .container{
+    flex-direction: column;
+}
+.locationMap img{
+    width: 100%;
+}
+.locationSponsors{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  
+    margin-top: 100px;
+
+}
+.locationSponsors div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.locationSponsors div{
+    height: 60px;
+    width: 190px;
+    margin-bottom: unset;
+    box-sizing: border-box;
+}
+
+.itemContainer{
+    flex-direction: row;
+    align-items: unset;
+    justify-content: space-between;
+}
+.reviewsItem{
+    padding: 30px;
+    border: 2px solid #dddd ;
+    border-radius: 10px;
+    max-width: 320px;
+    box-sizing: border-box;
+}
+
+.itemHead{
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.itemHead img{
+    margin-right: 20px;
+}
+.itemDicription{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.itemDicription h4{
+    font-size: 18px;
+}
+.itemDicription p{
+    font-size: 14px;
+}
+.itemDicription h4, p{
+    margin: 0px;
+    padding: 0px;
+}
+.itemRating{
+    margin-left: auto;
+}
+.itemText{
+    font-size: 14px;
+    line-height: 30px;
+}
+.itemRating::after{
+    content: url(img/star.svg);
+    margin-left: 11px;
+}
+.subscribe .flex{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 70px;
+    border-radius: 10px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.09);
+    position: relative;
+    top:120px;
+    background-color: #ffffff;
+}
+.subscribeText h2{
+    margin: 0 0 20px;
+    
+}
+.subscribeButton button{
+    width: 100%;
+    text-align: center;
+    background-color: #f53838;
+    color: #ffffff;
+    -webkit-box-shadow: 0 20px 40px rgba(245, 56, 56, 0.35);
+    box-shadow: 0 20px 40px rgba(245, 56, 56, 0.35);
+    padding: 20px 70px;
+    border-radius: 10px;
+    font-family: 'Rubik',sans-serif;
+    border: 2px solid #f53838;
+}
+
+.footer{
+    padding-top: 190px;
+    padding-bottom: 50px;
+    background-color: #f8f8f8;
+}
+.footer .container{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.footer .container > div:first-child{
+    margin-right: 230px;
+    flex: 2;
+}
+.footer .container >div:not(:first-child){
+    flex:1;
+}
+.footer .container > div >h4{
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+}
+.footerLogo{
+    margin-bottom: 20px;
+}
+.footer .container p{
+    line-height: 30px;
+}
+
+.socialMediaIcons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 30px 0px;
+}
+.socialMediaIcons img{
+    height: 50%;
+}
+.socialMediaIcons div{
+    display: flex;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.19);
+    align-items: center;
+    justify-content: center;
+}
+.footer .container ul{
+    list-style: none;
+    padding: 0;
+}
+.footer h4, .footer ul li{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+@media screen and (max-width:1180px) {
+    .container{
+        max-width: none;
+        width: auto;
+    }
+}
+@media screen and  (max-width:1024px) {
+    .reviewsItem{
+        padding: 15px;
+    }
+    .footer .container > div:first-child{
+        margin-right: 130px;
+    }
+}
+@media screen and (max-width:980px) {
+    .pricingPlan{
+        margin-bottom: 20px;
+    }
+    .pricing .container ,.itemContainer{
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .reviewsItem{
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+    .locationSponsors div{
+        height: 30px;
+        width: 95px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and  (max-width:860px){
+    body{
+        font-size: 12px;
+    }
+    .navigate ul li{
+        margin-right: 40px;
+    }
+    .regBlock div{
+        margin-right: 10px;
+    }
+    .button.reg{
+        padding: 10px 30px;
+        font-size: 12px;
+    }
+    .about{
+        padding-bottom:25px ;
+    }
+    .about .container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .aboutLeft h1{
+        font-size: 30px;
+    }
+    .aboutLeft button{
+        font-size: 12px;
+        padding: 15px 60px;
+    }
+    .statistic, .features , .pricing, .location, .reviews, .subscribe{
+        padding:25px 0px ;
+    }
+    .cell div{
+        margin: 10px 15px;
+    }
+    .pricing h2,  .locationHeader h2, .reviewsHeader h1, .subscribeText h2, .stat p:first-child{
+        font-size: 20px;
+    }
+    .stat p:last-child{
+        font-size: 15px;
+    }
+    .featuresRight h2{
+        font-size: 30px;
+        padding: 0px;
+    }
+    .featuresRight p{
+        line-height: 20px;
+    }
+    .featuresRight ul{
+        font-size: 10px;
+        margin-top: 0px;
+    }
+    .featuresRight li{
+        margin-bottom: 10px;
+    }
+    .pricingHeader , .locationHeader, .reviewsHeader{
+        margin:  0px 30px 40px;
+    }
+    .locationSponsors{
+        margin-top:  30px;
+    }
+    .reviews, .subscribe.container{
+        padding: 0px;
+    }
+    .subscribe .flex{
+        padding: 40px 50px;
+        top:40px
+    }
+    .subscribe button{
+        padding: 10px 50px;
+    }
+    .footer{
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+    .footer h4, .footer ul li{
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+}
+@media screen and  (max-width:710px) {
+    .navigate{
+        display: none;
+    }
+    .aboutRight button, .aboutRight, .featuresLeft{
+        width: 100%;
+    }
+    .statistic .container, .features .container, .subscribe .flex{
+        flex-direction: column;
+       
+    }
+    .statistic .container, .featuresRight{
+        align-items: flex-start;
+    }
+    .subscribeText{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .subscribeButton{
+        width: 60%;
+    }
+ }
+ @media screen and (max-width: 580px) {
+    .pricingHeader , .locationHeader, .reviewsHeader{
+        margin:  0px 15px 20px;
+    }
+    .locationSponsors div{
+        height: 15px;
+        width: 45px;
+        margin-bottom: 10px;
+    }
+    .footer .container{
+        flex-direction: column;
+    }
+    .footerLogo{
+        margin-bottom: 3px;
+    }
+    .footer .container p{
+        line-height: 15px;
+        padding: 5px 0px;
+    }
+    .socialMediaIcons{
+        margin: 7px 0px;
+    }
+    .socialMediaIcons div{
+        height: 20px;
+        width: 20px;
+        margin-right: 7px;
+    }
+    .footer .container ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer h4, .footer ul li{
+        padding-right: 10px;
+    }
+ }
